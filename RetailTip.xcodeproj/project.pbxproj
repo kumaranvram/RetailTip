@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		917E424C14EAE7B70034B264 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917E424B14EAE7B70034B264 /* UIKit.framework */; };
+		917E424E14EAE7B70034B264 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917E424D14EAE7B70034B264 /* Foundation.framework */; };
+		917E425014EAE7B70034B264 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917E424F14EAE7B70034B264 /* CoreGraphics.framework */; };
+		917E425214EAE7B70034B264 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917E425114EAE7B70034B264 /* CoreData.framework */; };
+		917E425814EAE7B70034B264 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 917E425614EAE7B70034B264 /* InfoPlist.strings */; };
+		917E425A14EAE7B70034B264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E425914EAE7B70034B264 /* main.m */; };
+		917E425E14EAE7B70034B264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E425D14EAE7B70034B264 /* AppDelegate.m */; };
+		917E426114EAE7B70034B264 /* RetailTip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 917E425F14EAE7B70034B264 /* RetailTip.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		917E424714EAE7B70034B264 /* RetailTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetailTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		917E424B14EAE7B70034B264 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		917E424D14EAE7B70034B264 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		917E424F14EAE7B70034B264 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		917E425114EAE7B70034B264 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		917E425514EAE7B70034B264 /* RetailTip-Info.plist */ = {isa = PBXFileReference; path = "RetailTip-Info.plist"; sourceTree = "<group>"; };
+		917E425714EAE7B70034B264 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		917E425914EAE7B70034B264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		917E425B14EAE7B70034B264 /* RetailTip-Prefix.pch */ = {isa = PBXFileReference; path = "RetailTip-Prefix.pch"; sourceTree = "<group>"; };
+		917E425C14EAE7B70034B264 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		917E425D14EAE7B70034B264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		917E426014EAE7B70034B264 /* RetailTip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RetailTip.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		917E424414EAE7B70034B264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917E424C14EAE7B70034B264 /* UIKit.framework in Frameworks */,
+				917E424E14EAE7B70034B264 /* Foundation.framework in Frameworks */,
+				917E425014EAE7B70034B264 /* CoreGraphics.framework in Frameworks */,
+				917E425214EAE7B70034B264 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		917E423C14EAE7B70034B264 = {
+			isa = PBXGroup;
+			children = (
+				917E425314EAE7B70034B264 /* RetailTip */,
+				917E424A14EAE7B70034B264 /* Frameworks */,
+				917E424814EAE7B70034B264 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		917E424814EAE7B70034B264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				917E424714EAE7B70034B264 /* RetailTip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		917E424A14EAE7B70034B264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				917E424B14EAE7B70034B264 /* UIKit.framework */,
+				917E424D14EAE7B70034B264 /* Foundation.framework */,
+				917E424F14EAE7B70034B264 /* CoreGraphics.framework */,
+				917E425114EAE7B70034B264 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		917E425314EAE7B70034B264 /* RetailTip */ = {
+			isa = PBXGroup;
+			children = (
+				917E425C14EAE7B70034B264 /* AppDelegate.h */,
+				917E425D14EAE7B70034B264 /* AppDelegate.m */,
+				917E425F14EAE7B70034B264 /* RetailTip.xcdatamodeld */,
+				917E425414EAE7B70034B264 /* Supporting Files */,
+			);
+			path = RetailTip;
+			sourceTree = "<group>";
+		};
+		917E425414EAE7B70034B264 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				917E425514EAE7B70034B264 /* RetailTip-Info.plist */,
+				917E425614EAE7B70034B264 /* InfoPlist.strings */,
+				917E425914EAE7B70034B264 /* main.m */,
+				917E425B14EAE7B70034B264 /* RetailTip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		917E424614EAE7B70034B264 /* RetailTip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917E426414EAE7B70034B264 /* Build configuration list for PBXNativeTarget "RetailTip" */;
+			buildPhases = (
+				917E424314EAE7B70034B264 /* Sources */,
+				917E424414EAE7B70034B264 /* Frameworks */,
+				917E424514EAE7B70034B264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetailTip;
+			productName = RetailTip;
+			productReference = 917E424714EAE7B70034B264 /* RetailTip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		917E423E14EAE7B70034B264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = ThoughtWorks;
+			};
+			buildConfigurationList = 917E424114EAE7B70034B264 /* Build configuration list for PBXProject "RetailTip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 917E423C14EAE7B70034B264;
+			productRefGroup = 917E424814EAE7B70034B264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				917E424614EAE7B70034B264 /* RetailTip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		917E424514EAE7B70034B264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917E425814EAE7B70034B264 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		917E424314EAE7B70034B264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917E425A14EAE7B70034B264 /* main.m in Sources */,
+				917E425E14EAE7B70034B264 /* AppDelegate.m in Sources */,
+				917E426114EAE7B70034B264 /* RetailTip.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		917E425614EAE7B70034B264 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				917E425714EAE7B70034B264 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		917E426214EAE7B70034B264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		917E426314EAE7B70034B264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		917E426514EAE7B70034B264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetailTip/RetailTip-Prefix.pch";
+				INFOPLIST_FILE = "RetailTip/RetailTip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		917E426614EAE7B70034B264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetailTip/RetailTip-Prefix.pch";
+				INFOPLIST_FILE = "RetailTip/RetailTip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		917E424114EAE7B70034B264 /* Build configuration list for PBXProject "RetailTip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917E426214EAE7B70034B264 /* Debug */,
+				917E426314EAE7B70034B264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		917E426414EAE7B70034B264 /* Build configuration list for PBXNativeTarget "RetailTip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917E426514EAE7B70034B264 /* Debug */,
+				917E426614EAE7B70034B264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		917E425F14EAE7B70034B264 /* RetailTip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				917E426014EAE7B70034B264 /* RetailTip.xcdatamodel */,
+			);
+			currentVersion = 917E426014EAE7B70034B264 /* RetailTip.xcdatamodel */;
+			path = RetailTip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 917E423E14EAE7B70034B264 /* Project object */;
+}

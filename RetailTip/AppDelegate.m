@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ScheduleViewController.h"
 
 @implementation AppDelegate
 
@@ -14,14 +15,52 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize tips;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    //tips = [[NSMutableArray alloc] init];
+    //Registering Push Notifications
+    NSLog(@"Registering for push notifications...");    
+    [[UIApplication sharedApplication] 
+     registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeAlert | 
+      UIRemoteNotificationTypeBadge | 
+      UIRemoteNotificationTypeSound)];
+    //Read Data from CoreData
+    [self loadTips];
     return YES;
+}
+
+-(void) loadTips {
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Tip" inManagedObjectContext:[self managedObjectContext]];   
+    
+    // Setup the fetch request  
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];  
+    [request setEntity:entity];   
+    
+    // Define how we will sort the records  
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];  
+    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];  
+    [request setSortDescriptors:sortDescriptors];  
+    
+    // Fetch the records and handle an error  
+
+    NSMutableArray *mutableFetchResults = [[[self managedObjectContext] executeFetchRequest:request error:nil] mutableCopy];   
+    
+    if (!mutableFetchResults) {  
+        // Handle the error.  
+        // This is a serious error and should advise the user to restart the application  
+    }   
+    if ([mutableFetchResults count] > 7) {
+        for(int i=7; i<[mutableFetchResults count]; i++){
+            Tip *temp = [mutableFetchResults objectAtIndex:i];
+            [[self managedObjectContext] deleteObject:temp];
+        }
+    }
+    
+    // Save our fetched data to an array  
+    [self setTips: mutableFetchResults];   
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -38,6 +77,7 @@
      Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -171,6 +211,34 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
+    
+    NSString *str = [NSString 
+                     stringWithFormat:@"Device Token=%@",deviceToken];
+    NSLog(@"%@", str);
+    
+}
+
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err { 
+    
+    NSString *str = [NSString stringWithFormat: @"Error: %@", err];
+    NSLog(@"%@", str);    
+    
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"%@", userInfo);
+    NSDictionary *pushInfo = [userInfo objectForKey:@"aps"];
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Tip" inManagedObjectContext:[self managedObjectContext]];
+    Tip *todaysTip = [[Tip alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:[self managedObjectContext]];
+    [todaysTip setDate:[NSDate date]];
+    NSString *alertMessage = [pushInfo objectForKey:@"alert"];
+    [todaysTip setTip: alertMessage];//[[[userInfo objectForKey:@"aps"] objectForKey:@"alert"] stringValue]];
+    [[self managedObjectContext] save:nil];
+    [self loadTips];
+    [UIApplication sharedApplication].applicationIconBadgeNumber += 1;
 }
 
 @end

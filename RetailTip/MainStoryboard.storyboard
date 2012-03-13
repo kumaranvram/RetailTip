@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2166" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rAn-ke-jDX">
+    <dependencies>
+        <development version="4200" defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1166"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule View Controller - Tips-->
+        <scene sceneID="IxA-aZ-4nZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1N-bI-eug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Tips" id="HhD-JZ-d1e" customClass="ScheduleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y5o-Ro-4H7">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="TVP-43-Tq0">
+                                <rect key="frame" x="0.0" y="0.0" width="326" height="334"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScheduleListTableViewCell" textLabel="CwN-gE-sEc" style="IBUITableViewCellStyleDefault" id="gWL-N9-G4M">
+                                        <rect key="frame" x="0.0" y="46" width="326" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="286" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" id="CwN-gE-sEc">
+                                                    <rect key="frame" x="10" y="0.0" width="266" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" red="0.80000000000000004" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="SCg-Kz-TIM" kind="push" identifier="ShowTip" id="va4-80-MS9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HhD-JZ-d1e" id="ZSi-4Z-7Yp"/>
+                                    <outlet property="delegate" destination="HhD-JZ-d1e" id="4p8-cJ-zun"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="corporate_logo.png" id="BaV-dl-XDr">
+                                <rect key="frame" x="72" y="362" width="176" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="facebook_share.png" id="GTF-s6-9nI">
+                                <rect key="frame" x="11" y="386" width="20" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tweet.png" id="xjl-EY-aES">
+                                <rect key="frame" x="37" y="386" width="20" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="© 2012 ThoughtWorks, Inc." id="FqM-zf-Fth">
+                                <rect key="frame" x="97" y="389" width="133" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="9"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Retail Tip For The Day" id="hU0-bY-0nJ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="TVP-43-Tq0" id="31h-Nr-EuY"/>
+                        <outlet property="view" destination="y5o-Ro-4H7" id="a53-r8-JuO"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="394" y="67"/>
+        </scene>
+        <!--Details View Controller - Tip Of the Day-->
+        <scene sceneID="nfW-SK-OUT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYT-Jc-qTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Tip Of the Day" id="SCg-Kz-TIM" customClass="DetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K8O-Br-U2X">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="7yY-8D-1NQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6sB-rQ-QUb">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fsA-D2-Kcy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detailTip" destination="7yY-8D-1NQ" id="G1e-mp-yYg"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="793" y="67"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Bc-P9-Mut">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syw-lg-dXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="rAn-ke-jDX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hrz-5M-QB1">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HhD-JZ-d1e" kind="relationship" relationship="rootViewController" id="fut-BA-wDy"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-40" y="67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="corporate_logo.png" width="176" height="27"/>
+        <image name="facebook_share.png" width="20" height="27"/>
+        <image name="tweet.png" width="20" height="27"/>
+    </resources>
+    <classes>
+        <class className="DetailsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailTip" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ScheduleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

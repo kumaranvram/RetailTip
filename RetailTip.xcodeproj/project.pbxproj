@@ -15,6 +15,14 @@
 		917E425A14EAE7B70034B264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E425914EAE7B70034B264 /* main.m */; };
 		917E425E14EAE7B70034B264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E425D14EAE7B70034B264 /* AppDelegate.m */; };
 		917E426114EAE7B70034B264 /* RetailTip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 917E425F14EAE7B70034B264 /* RetailTip.xcdatamodeld */; };
+		917E427114EAE8D80034B264 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E426814EAE8D80034B264 /* DetailsViewController.m */; };
+		917E427214EAE8D80034B264 /* corporate_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E426914EAE8D80034B264 /* corporate_logo.png */; };
+		917E427314EAE8D80034B264 /* facebook_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E426A14EAE8D80034B264 /* facebook_share.png */; };
+		917E427414EAE8D80034B264 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E426B14EAE8D80034B264 /* icon.png */; };
+		917E427514EAE8D80034B264 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E426D14EAE8D80034B264 /* ScheduleViewController.m */; };
+		917E427714EAE8D80034B264 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E427014EAE8D80034B264 /* tweet.png */; };
+		917E427B14EAE90A0034B264 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917E427914EAE90A0034B264 /* MainStoryboard.storyboard */; };
+		91F60DB714EAEC92001790CF /* Tip.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F60DB614EAEC92001790CF /* Tip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +31,24 @@
 		917E424D14EAE7B70034B264 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		917E424F14EAE7B70034B264 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		917E425114EAE7B70034B264 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		917E425514EAE7B70034B264 /* RetailTip-Info.plist */ = {isa = PBXFileReference; path = "RetailTip-Info.plist"; sourceTree = "<group>"; };
+		917E425514EAE7B70034B264 /* RetailTip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetailTip-Info.plist"; sourceTree = "<group>"; };
 		917E425714EAE7B70034B264 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		917E425914EAE7B70034B264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		917E425B14EAE7B70034B264 /* RetailTip-Prefix.pch */ = {isa = PBXFileReference; path = "RetailTip-Prefix.pch"; sourceTree = "<group>"; };
-		917E425C14EAE7B70034B264 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		917E425B14EAE7B70034B264 /* RetailTip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetailTip-Prefix.pch"; sourceTree = "<group>"; };
+		917E425C14EAE7B70034B264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		917E425D14EAE7B70034B264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		917E426014EAE7B70034B264 /* RetailTip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RetailTip.xcdatamodel; sourceTree = "<group>"; };
+		917E426714EAE8D80034B264 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		917E426814EAE8D80034B264 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		917E426914EAE8D80034B264 /* corporate_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corporate_logo.png; sourceTree = "<group>"; };
+		917E426A14EAE8D80034B264 /* facebook_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_share.png; sourceTree = "<group>"; };
+		917E426B14EAE8D80034B264 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		917E426C14EAE8D80034B264 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		917E426D14EAE8D80034B264 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		917E427014EAE8D80034B264 /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		917E427914EAE90A0034B264 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		91F60DB514EAEC92001790CF /* Tip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tip.h; sourceTree = "<group>"; };
+		91F60DB614EAEC92001790CF /* Tip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +97,20 @@
 		917E425314EAE7B70034B264 /* RetailTip */ = {
 			isa = PBXGroup;
 			children = (
+				917E427914EAE90A0034B264 /* MainStoryboard.storyboard */,
+				917E426714EAE8D80034B264 /* DetailsViewController.h */,
+				917E426814EAE8D80034B264 /* DetailsViewController.m */,
+				917E426914EAE8D80034B264 /* corporate_logo.png */,
+				917E426A14EAE8D80034B264 /* facebook_share.png */,
+				917E426B14EAE8D80034B264 /* icon.png */,
+				917E426C14EAE8D80034B264 /* ScheduleViewController.h */,
+				917E426D14EAE8D80034B264 /* ScheduleViewController.m */,
+				917E427014EAE8D80034B264 /* tweet.png */,
 				917E425C14EAE7B70034B264 /* AppDelegate.h */,
 				917E425D14EAE7B70034B264 /* AppDelegate.m */,
 				917E425F14EAE7B70034B264 /* RetailTip.xcdatamodeld */,
+				91F60DB514EAEC92001790CF /* Tip.h */,
+				91F60DB614EAEC92001790CF /* Tip.m */,
 				917E425414EAE7B70034B264 /* Supporting Files */,
 			);
 			path = RetailTip;
@@ -149,6 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				917E425814EAE7B70034B264 /* InfoPlist.strings in Resources */,
+				917E427214EAE8D80034B264 /* corporate_logo.png in Resources */,
+				917E427314EAE8D80034B264 /* facebook_share.png in Resources */,
+				917E427414EAE8D80034B264 /* icon.png in Resources */,
+				917E427714EAE8D80034B264 /* tweet.png in Resources */,
+				917E427B14EAE90A0034B264 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +197,9 @@
 				917E425A14EAE7B70034B264 /* main.m in Sources */,
 				917E425E14EAE7B70034B264 /* AppDelegate.m in Sources */,
 				917E426114EAE7B70034B264 /* RetailTip.xcdatamodeld in Sources */,
+				917E427114EAE8D80034B264 /* DetailsViewController.m in Sources */,
+				917E427514EAE8D80034B264 /* ScheduleViewController.m in Sources */,
+				91F60DB714EAEC92001790CF /* Tip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +305,7 @@
 				917E426614EAE7B70034B264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

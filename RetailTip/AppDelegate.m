@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ScheduleViewController.h"
 
 @implementation AppDelegate
 
@@ -29,6 +28,8 @@
       UIRemoteNotificationTypeSound)];
     //Read Data from CoreData
     [self loadTips];
+    //Add Observer
+    
     return YES;
 }
 

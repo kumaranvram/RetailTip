@@ -16,6 +16,7 @@
 {
     delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     [self setTips:[delegate tips]];
+    [tableView reloadData];
     [super viewDidLoad];
 }
 
@@ -31,6 +32,8 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [self setTips:[delegate tips]];
+    [tableView reloadData];
     [super viewDidAppear:animated];
 }
 
@@ -45,7 +48,7 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return NO;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -71,8 +74,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self setSelectedTip:[[self tips] objectAtIndex:indexPath.row]];
-    NSLog(@"%@ %@", [[self selectedTip] date], [[self selectedTip] tip]);
-    NSLog(@"%@ %d", indexPath, indexPath.row);
+    NSLog(@"%@", [self selectedTip]);
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

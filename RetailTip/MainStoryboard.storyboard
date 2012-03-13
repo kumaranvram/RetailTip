@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2166" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rAn-ke-jDX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2166" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rAn-ke-jDX">
     <dependencies>
         <development version="4200" defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1166"/>
@@ -74,7 +74,7 @@
                     <navigationItem key="navigationItem" title="Retail Tip For The Day" id="hU0-bY-0nJ"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <connections>
-                        <outlet property="tableView" destination="TVP-43-Tq0" id="31h-Nr-EuY"/>
+                        <outlet property="tableView" destination="TVP-43-Tq0" id="VlI-En-48G"/>
                         <outlet property="view" destination="y5o-Ro-4H7" id="a53-r8-JuO"/>
                     </connections>
                 </viewController>

@@ -10,4 +10,5 @@
 @property (strong, nonatomic) NSArray *tips;
 @property (strong, nonatomic) Tip *selectedTip;
 @property (strong, nonatomic) NSString *selectedKey;
+
 @end

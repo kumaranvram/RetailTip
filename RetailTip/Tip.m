@@ -14,4 +14,8 @@
 @dynamic date;
 @dynamic tip;
 
+-(NSString *) stringValue {
+    return  [NSString stringWithFormat:@"Tip for %@ is %@", [self date], [self tip]];
+}
+
 @end

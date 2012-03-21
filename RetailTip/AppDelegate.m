@@ -15,10 +15,10 @@
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 @synthesize tips;
-
+@synthesize tableView;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //tips = [[NSMutableArray alloc] init];
+    [self setTips: [NSMutableArray array]];
     //Registering Push Notifications
     NSLog(@"Registering for push notifications...");    
     [[UIApplication sharedApplication] 
@@ -34,6 +34,7 @@
 }
 
 -(void) loadTips {
+    [self.tips removeAllObjects];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Tip" inManagedObjectContext:[self managedObjectContext]];   
     
     // Setup the fetch request  
@@ -61,7 +62,7 @@
     }
     
     // Save our fetched data to an array  
-    [self setTips: mutableFetchResults];   
+    [self.tips addObjectsFromArray: mutableFetchResults];   
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -240,6 +241,7 @@
     [[self managedObjectContext] save:nil];
     [self loadTips];
     [UIApplication sharedApplication].applicationIconBadgeNumber += 1;
+    if(self.tableView != nil) [self.tableView reloadData];
 }
 
 @end

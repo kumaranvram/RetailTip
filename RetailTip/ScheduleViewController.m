@@ -1,10 +1,14 @@
 #import "ScheduleViewController.h"
 
+@interface ScheduleViewController ()
+@property AppDelegate *delegate;
+@end
 @implementation ScheduleViewController
 
 @synthesize tableView;
 @synthesize tips, selectedTip;
 @synthesize selectedKey;
+@synthesize delegate;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -14,9 +18,9 @@
 
 - (void)viewDidLoad 
 {
-    delegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    [self setTips:[delegate tips]];
-    [tableView reloadData];
+    [self setDelegate:(AppDelegate *) [[UIApplication sharedApplication] delegate]];
+    [self setTips:[self.delegate tips]];
+    [self.delegate setTableView:tableView];
     [super viewDidLoad];
 }
 
@@ -30,12 +34,12 @@
     [super viewWillAppear:animated];
 }
 
-- (void)viewDidAppear:(BOOL)animated
+/*- (void)viewDidAppear:(BOOL)animated
 {
     [self setTips:[delegate tips]];
     [tableView reloadData];
     [super viewDidAppear:animated];
-}
+}*/
 
 - (void)viewWillDisappear:(BOOL)animated
 {
